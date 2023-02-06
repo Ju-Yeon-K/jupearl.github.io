@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Kim JuYeon"
+  avatar           : "photos/profile.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "**이것저것 다 해보기**<br>나중에 까먹으면 보려고<br>요즘 배우는거 정리"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: mailto:7777kmg@hanmail.net
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
