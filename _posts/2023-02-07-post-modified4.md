@@ -28,7 +28,7 @@ print(2 ** N -1) #
 hanoi(N, 1, 2, 3)
 ```
 머릿속 구현 단계를 정리한 그림 
-![하노이그림](../photos/images/11729_image1.jpeg){: width="50%" height="50%"0}{: .center}
+![하노이그림](../photos/images/11729_image1.jpeg) {: width="30%" height="50%"0}
 
 ```
 구현 중 생각했던 점
