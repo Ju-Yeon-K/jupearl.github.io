@@ -1,6 +1,6 @@
 ---
-title: "swea 함수로 구현"
-last_modified_at: 2016-03-09T16:20:02-05:00
+title: "[SWEA] 1211 Ladder2"
+last_modified_at: 
 categories:
   - Algorithm
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 
 
-# swea 1211
+# python 
 ```python
 def move_of_dot(a:list,x:int,y:int):
 

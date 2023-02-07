@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Github"
+  #   url: https://github.com/jupearl
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Algorithm"
+    url: /algorithm/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

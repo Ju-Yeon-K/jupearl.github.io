@@ -1,5 +1,5 @@
 ---
-title: "merge sort 구현"
+title: "[Algorithm] merge sort"
 last_modified_at: 
 categories:
   - Algorithm
@@ -10,7 +10,10 @@ tags:
 ---
 
 
-##  **merge sort**
+##  **재귀를 통한 merge sort 구현**
+<br>
+
+
 ```python
 
 def partial_sort(arr:list):   #[   [  ]   ,   [   ]    ] 형태로 입력됨
