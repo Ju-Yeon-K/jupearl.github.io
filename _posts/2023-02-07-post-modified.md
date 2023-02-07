@@ -9,8 +9,9 @@ tags:
   - standard
 ---
 
+##  **[SWEA] 1211 Ladder2**
+<br>
 
-# python 
 ```python
 def move_of_dot(a:list,x:int,y:int):
 

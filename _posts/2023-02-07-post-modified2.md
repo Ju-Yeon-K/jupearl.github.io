@@ -10,7 +10,8 @@ tags:
 ---
 
 
-##  **재귀를 통한 merge sort 구현**
+##  **[Algorithm] merge sort<br>**
+### **재귀를 통한 merge sort 구현**
 <br>
 
 
@@ -23,7 +24,8 @@ def partial_sort(arr:list):   #[   [  ]   ,   [   ]    ] 형태로 입력됨
         
         arr = list(filter(lambda x : bool(x), arr)) # 빈 리스트 있으면 삭제
         if len(arr) == 1:
-            partial_sorted_list.extend(arr[0]) # 요소 여러개일수도 있으니까 append 가 아닌 extend
+            partial_sorted_list.extend(arr[0]) 
+            # 요소 여러개일수도 있으니까 append 가 아닌 extend
             break 
         elif arr[0][0] < arr[1][0]:
             partial_sorted_list.append(arr[0].pop(0))
