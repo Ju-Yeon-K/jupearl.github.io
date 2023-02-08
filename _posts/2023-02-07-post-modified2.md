@@ -1,5 +1,5 @@
 ---
-title: "[Algorithm] merge sort"
+title: "[Algorithm] 대표적인 정렬 방식 구현 "
 last_modified_at: 
 categories:
   - Algorithm
@@ -8,19 +8,127 @@ tags:
   - readability
   - standard
 ---
+2개 이상의 자료를 정렬하는 기준은 임의로 설정이 가능함. <br>
+이 게시물에서는 **숫자**로 구성된 자료를 **크기** 순서로 정렬하고자 하며, 대표적인 정렬 방식은 다음과 같음. 
+- Bubble Sort
+- Counting Sort
+- Selection Sort
+- Merge Sort
 
-
-##  **[Algorithm] merge sort<br>**
-### **재귀를 통한 merge sort 구현**
-<br>
+**해당 정렬방법을 <U>파이썬 내장함수 사용하지 않고</U> 구현해봄.**
+##  **[1] Bubble Sort**
+**시간 복잡도 = O(n^2)**   
+인접한 두 개의 원소 비교하여 자리 교환하는 방식 <br>
 
 
 ```python
+def bubble_sort(arr:list):
+    N = len(arr)
+    sorted_list = [0]*N
+    for i in range(N-1, 0, -1):
+        max_temp = arr[:i+1][0]
+        for j in range(1, i):            
+            if max_temp < arr[:i+1][j]:
+                max_temp = arr[:i+1][j]
+        sorted_list[i] = max_temp
+    return sorted_list
 
+```
+
+### 💭Idea들 
+if 문 조건 아래와 같이 설정 가능할 것 같음. 
+```python
+a[j] < a[j+1]
+```
+다만 이 경우 j 의 범위와 실행할 동작도 수정해야되겠음. (당연하지만 일단 적음)
+max_temp 1개 변수에 지속적으로 값을 할당하여 저장하면 메모리, 실행속도 면에서 위 방법보다 더 유리할 것 같아서 해당 방법으로 구현하였음.
+
+
+   
+      
+
+
+##  **[2] Counting Sort**
+**시간 복잡도 = O(n+k)**
+(n = 리스트의 길이, k = 최대 정수값)   
+각 요소 갯수를 이용한 정렬 방법 <br>
+
+
+```python
+def counting_sort(arr:list):
+    N = len(arr)
+
+    k = arr[0]
+    for i in range(1, N):
+        if arr[i] > k:
+            k = arr[i] 
+    print(k)
+    # k 에는 arr 의 최댓값이 저장됨.
+    
+    cnt = [0]*(k+1)
+    for i in arr:
+        cnt[i] += 1
+    for i in range(1, k+1):
+        cnt[i] += cnt[i-1]
+    
+    sorted_list = [0]*N
+    for i in range(N-1, -1, -1):
+        cnt[arr[i]] -= 1
+        sorted_list[cnt[arr[i]]] = arr[i]
+    
+    return sorted_list
+```
+
+### 💭Idea들 
+0 이상의 정수만 정렬이 가능함.    
+또한 리스트 내 매우 큰 정수가 있다면 (ex. 123123123) 속도 현저히 떨어짐.   
+해당 갯수+1 의 리스트를 저장해야하기 때문에 메모리도 매우매우매우 x123 많이 잡아먹음.   
+결론: n이 비교적 작을 때만 유용할 듯?
+
+
+
+##  **[3] Selection Sort**
+**시간 복잡도 = O(n^2)**   
+탐색을 통해 찾은 min 값을 리스트 맨 첫번째 값과 교환하는 방법 <br>
+
+
+```python
+# 순차 탐색 후 min 값의 인덱스를 리턴하는 함수
+def finding_min(arr):
+    im_min = arr[0]
+    idx_min = 0
+    for idx, i in enumerate(arr):
+        if im_min > i :
+            im_min = i 
+            idx_min = idx
+    
+    return (idx_min)
+
+def selection_sort(arr:list):
+    N = len(arr)
+
+    for i in range(N-1):
+        idx_min  = finding_min(arr[i:])
+        arr[i], arr[idx_min+i] = arr[idx_min+i], arr[i]
+   
+    return arr
+
+```
+
+### 💭Idea들 
+딱히 문제 없었음.
+
+
+##  **[4] Merge sort**
+**시간 복잡도 = O(NlogN)**   
+리스트 반으로 계속 쪼갠 후 생성된 각 리스트들의 0번째 인덱스만 비교하여 다시 합병하는 방법 <br>
+일반적으로 재귀를 통하여 구현하다는 글을 참고함.
+
+```python
 def partial_sort(arr:list):   #[   [  ]   ,   [   ]    ] 형태로 입력됨
 
     partial_sorted_list = []
-    while len(arr[0]) or len(arr[1]):
+    while arr:
         
         arr = list(filter(lambda x : bool(x), arr)) # 빈 리스트 있으면 삭제
         if len(arr) == 1:
@@ -49,9 +157,9 @@ def merge_sort(lst):
         return partial_sort([merge_sort(lst[:N]), merge_sort(lst[N:])])
 
 ```
-```
-- 구현 중 했던 생각들
-index error : 
- - partial_sort 함수 내부 에서 'while arr' ->  'while len(arr[0]) or len(arr[1])'
 
+### 💭Idea들 
+partial_sort 함수 내부 에서 while 문 조건을 조금더 직관적으로 작성하면 다음과 같음.
+```python 
+'while len(arr[0]) or len(arr[1])'
 ```
