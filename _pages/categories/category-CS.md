@@ -1,7 +1,7 @@
 ---
-title: "SWEA"
+title: "CS"
 layout: archive
-permalink: categories/Algorithm/SWEA/
+permalink: categories/CS/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"
@@ -10,5 +10,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.SWEA %}
+{% assign posts = site.categories.CS %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

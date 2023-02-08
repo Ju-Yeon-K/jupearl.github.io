@@ -2,7 +2,7 @@
 title: "[SWEA] 1211 Ladder2"
 last_modified_at: 
 categories:
-  - Algorithm
+  - SWEA
 tags:
   - Post Formats
   - readability

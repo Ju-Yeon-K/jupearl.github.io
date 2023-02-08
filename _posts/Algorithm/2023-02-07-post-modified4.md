@@ -2,7 +2,7 @@
 title: "[SWEA] 11729 하노이의 탑 일반적인 풀이"
 last_modified_at: 
 categories:
-  - Algorithm
+  - SWEA
 tags:
   - Post Formats
   - readability

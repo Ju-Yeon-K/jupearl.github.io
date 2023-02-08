@@ -1,7 +1,7 @@
 ---
 title: "Algorithm"
 layout: archive
-permalink: categories/Algorithm/
+permalink: categories/Algorithm/Algorithm/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"

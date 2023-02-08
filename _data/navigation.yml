@@ -4,9 +4,9 @@ main:
   #   url: https://github.com/jupearl
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Programming"
+    url: categories/Programming/
   - title: "Algorithm"
-    url: /algorithm/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: categories/Algorithm/Algorithm/   # 나중에 수정
+  - title: "CS"
+    url: categories/CS/

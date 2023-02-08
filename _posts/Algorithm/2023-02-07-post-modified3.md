@@ -2,7 +2,7 @@
 title: "[SWEA] 6019 기차 사이의 파리"
 last_modified_at: 
 categories:
-  - Algorithm
+  - SWEA
 tags:
   - Post Formats
   - readability
