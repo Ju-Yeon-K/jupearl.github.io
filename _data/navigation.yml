@@ -7,6 +7,6 @@ main:
   - title: "Programming"
     url: categories/Programming/
   - title: "Algorithm"
-    url: categories/Algorithm/Algorithm/   # 나중에 수정
+    url: categories/Algorithm/   # 나중에 수정
   - title: "CS"
     url: categories/CS/
