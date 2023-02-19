@@ -1,7 +1,7 @@
 ---
 title: "SWEA"
 layout: archive
-permalink: categories/Algorithm/SWEA/
+permalink: /categories/Algorithm/SWEA/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"

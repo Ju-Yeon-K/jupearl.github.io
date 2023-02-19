@@ -5,8 +5,17 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Programming"
-    url: categories/Programming/
+    url: /categories/Programming/
   - title: "Algorithm"
-    url: categories/Algorithm/   # 나중에 수정
+    url: /categories/Algorithm/   # 나중에 수정
+    sublinks:
+      - title: SWEA
+        url: /categories/Algorithm/SWEA/
+      - title: Backjoon
+        url: /categories/Algorithm/Backjoon/
+      - title: Note
+        url: /categories/Algorithm/Note/
+      
+      
   - title: "CS"
-    url: categories/CS/
+    url: /categories/CS/

@@ -1,7 +1,7 @@
 ---
 title: "Backjoon"
 layout: archive
-permalink: categories/Algorithm/Backjoon/
+permalink: /categories/Algorithm/Backjoon/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"

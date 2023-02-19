@@ -1,7 +1,7 @@
 ---
 title: "CS"
 layout: archive
-permalink: categories/CS/
+permalink: /categories/CS/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"

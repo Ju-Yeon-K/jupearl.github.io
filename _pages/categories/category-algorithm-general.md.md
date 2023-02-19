@@ -1,7 +1,7 @@
 ---
-title: "Algorithm"
+title: "Note"
 layout: archive
-permalink: categories/Algorithm/Algorithm/
+permalink: /categories/Algorithm/Note/
 # toc: true
 # toc_sticky: true
 # toc_label: "MYSELF"
@@ -10,7 +10,7 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.Algorithm %}
+{% assign posts = site.categories.Note %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 
